@@ -1,0 +1,6 @@
+assets/*.aux
+assets/*.log
+assets/*.out
+assets/*.toc
+Thumbs.db
+.DS_Store
