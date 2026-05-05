@@ -4,9 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="钱佳辰的个人学术主页，聚焦可信多模态人工智能、智能体安全、长时记忆投毒与对抗防御。">
+  <meta name="author" content="Jiachen Qian">
+  <link rel="canonical" href="https://qianjiachen.github.io/homepage/">
+  <meta property="og:title" content="钱佳辰 | Jiachen Qian">
+  <meta property="og:description" content="Personal academic homepage of Jiachen Qian, focusing on trustworthy multimodal AI and agent security.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://qianjiachen.github.io/homepage/">
   <title>钱佳辰 | 个人学术主页</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jiachen Qian",
+      "alternateName": "钱佳辰",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "City University of Hong Kong"
+      },
+      "url": "https://qianjiachen.github.io/homepage/",
+      "email": "mailto:72510756@cityu-dg.edu.cn",
+      "sameAs": [
+        "https://scholar.google.com/citations?user=zN0XzvAAAAAJ&hl=zh-CN",
+        "https://github.com/qianjiachen"
+      ],
+      "knowsAbout": [
+        "Trustworthy AI",
+        "Multimodal LLM Agents",
+        "Agent Security",
+        "Adversarial Machine Learning"
+      ]
+    }
+  </script>
 </head>
 <body>
   <div class="page-shell">
@@ -20,11 +50,11 @@
           </span>
         </a>
         <nav class="nav" aria-label="主导航">
+          <a href="#publications">论文</a>
           <a href="#about">简介</a>
           <a href="#research">研究</a>
           <a href="#education">教育</a>
           <a href="#projects">项目</a>
-          <a href="#publications">论文</a>
           <a href="#contact">联系</a>
         </nav>
       </div>
@@ -47,6 +77,8 @@
             <div class="hero-actions">
               <a class="button primary" href="mailto:72510756@cityu-dg.edu.cn">邮箱联系</a>
               <a class="button secondary" href="assets/cv.pdf" download>下载简历 PDF</a>
+              <a class="button secondary" href="https://scholar.google.com/citations?user=zN0XzvAAAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
+              <a class="button secondary" href="https://github.com/qianjiachen" target="_blank" rel="noreferrer">GitHub</a>
             </div>
             <ul class="tag-list" aria-label="研究关键词">
               <li>可信人工智能</li>
@@ -61,7 +93,7 @@
             <article class="spotlight-card">
               <p class="spotlight-label">研究概览</p>
               <p>
-                已围绕多模态智能体安全形成两篇独立一作论文、1 篇合作 arXiv 预印本与
+                已围绕多模态智能体安全形成两篇第一作者论文、1 篇合作 arXiv 预印本与
                 1 篇 ECCV 在投论文，具备从问题定义到论文撰写的完整科研训练。
               </p>
             </article>
@@ -69,7 +101,7 @@
             <div class="stat-grid">
               <article class="stat-card">
                 <strong>2</strong>
-                <span>独立一作论文</span>
+                <span>第一作者论文</span>
               </article>
               <article class="stat-card">
                 <strong>1</strong>
@@ -97,6 +129,70 @@
         </div>
       </section>
 
+      <section class="section" id="publications">
+        <div class="section-header">
+          <div>
+            <p class="kicker">Publications</p>
+            <h2>论文与稿件</h2>
+          </div>
+          <p class="section-note">优先展示已录用论文，并区分预印本与在投稿件状态。</p>
+        </div>
+
+        <div class="paper-grid">
+          <article class="surface paper-card featured">
+            <div class="paper-header">
+              <span class="status accepted">已录用</span>
+              <span class="paper-role">第一作者</span>
+            </div>
+            <h3>Penny Wise, Pixel Foolish: Bypassing Price Constraints in Multimodal Agents via Visual Adversarial Perturbations.</h3>
+            <p class="paper-meta"><strong>Qian, Jiachen</strong> and Zhaolu Kang</p>
+            <p class="paper-venue">Findings of ACL 2026</p>
+            <p class="paper-summary">多模态购物智能体价格约束绕过攻击与防御。</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2604.16515" target="_blank" rel="noreferrer">arXiv: 2604.16515</a>
+            </div>
+          </article>
+
+          <article class="surface paper-card featured">
+            <div class="paper-header">
+              <span class="status accepted">已录用</span>
+              <span class="paper-role">第一作者</span>
+            </div>
+            <h3>Visual Inception: Compromising Long-term Planning in Agentic Recommenders via Multimodal Memory Poisoning.</h3>
+            <p class="paper-meta"><strong>Qian, Jiachen</strong></p>
+            <p class="paper-venue">ACL 2026 Main Conference</p>
+            <p class="paper-summary">面向 Agentic Recommender 的长时记忆投毒与防御。</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2604.16966" target="_blank" rel="noreferrer">arXiv: 2604.16966</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="publication-stack">
+          <article class="surface publication-block">
+            <div class="paper-header">
+              <span class="status preprint">合作预印本</span>
+            </div>
+            <h3>How Order-Sensitive Are LLMs? OrderProbe for Deterministic Structural Reconstruction.</h3>
+            <p class="paper-meta">He, Yingjie, Zhaolu Kang, Kehan Jiang, <strong>Qian, Jiachen</strong>, et al.</p>
+            <p class="paper-venue">arXiv preprint, 2026</p>
+            <p class="paper-summary">共同作者；LLM 顺序敏感性与确定性结构重建。</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2601.08626" target="_blank" rel="noreferrer">arXiv: 2601.08626</a>
+            </div>
+          </article>
+
+          <article class="surface publication-block">
+            <div class="paper-header">
+              <span class="status review">在审 / Under Review</span>
+            </div>
+            <h3>Manuscript on attacks against large models for tampered social-media image detection.</h3>
+            <p class="paper-venue">Submitted to ECCV, 2026</p>
+            <p class="paper-summary">合作研究；社交媒体篡改图像识别大模型攻击。</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section" id="about">
         <div class="section-header">
           <div>
@@ -112,7 +208,7 @@
               重点关注购物智能体中的视觉对抗失效、Agentic Recommender 中的长时记忆投毒，以及 LLM 的结构敏感行为分析。
             </p>
             <p>
-              已围绕多模态智能体安全完成两篇独立一作论文，参与 1 篇关于大模型顺序敏感性与确定性结构重建的 arXiv 预印本，
+              已围绕多模态智能体安全完成两篇第一作者论文，参与 1 篇关于大模型顺序敏感性与确定性结构重建的 arXiv 预印本，
               并有 1 篇面向社交媒体篡改图像识别大模型攻击的 ECCV 在投论文。
             </p>
           </article>
@@ -164,7 +260,6 @@
             </div>
             <p class="timeline-meta">中国香港</p>
             <ul class="bullet-list">
-              <li>GPA：3.3 / 4.0</li>
               <li>当前研究围绕可信多模态智能体、记忆增强 AI 系统以及对抗鲁棒性展开。</li>
             </ul>
           </article>
@@ -262,70 +357,6 @@
         </div>
       </section>
 
-      <section class="section" id="publications">
-        <div class="section-header">
-          <div>
-            <p class="kicker">Publications</p>
-            <h2>论文与稿件</h2>
-          </div>
-          <p class="section-note">区分已录用、预印本与在投论文，避免状态混淆。</p>
-        </div>
-
-        <div class="paper-grid">
-          <article class="surface paper-card featured">
-            <div class="paper-header">
-              <span class="status accepted">已录用</span>
-              <span class="paper-role">独立一作</span>
-            </div>
-            <h3>Penny Wise, Pixel Foolish: Bypassing Price Constraints in Multimodal Agents via Visual Adversarial Perturbations.</h3>
-            <p class="paper-meta"><strong>Qian, Jiachen</strong> and Zhaolu Kang</p>
-            <p class="paper-venue">Findings of ACL 2026</p>
-            <p class="paper-summary">多模态购物智能体价格约束绕过攻击与防御。</p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/abs/2604.16515" target="_blank" rel="noreferrer">arXiv: 2604.16515</a>
-            </div>
-          </article>
-
-          <article class="surface paper-card featured">
-            <div class="paper-header">
-              <span class="status accepted">已录用</span>
-              <span class="paper-role">独立一作</span>
-            </div>
-            <h3>Visual Inception: Compromising Long-term Planning in Agentic Recommenders via Multimodal Memory Poisoning.</h3>
-            <p class="paper-meta"><strong>Qian, Jiachen</strong></p>
-            <p class="paper-venue">ACL 2026 Main Conference</p>
-            <p class="paper-summary">面向 Agentic Recommender 的长时记忆投毒与防御。</p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/abs/2604.16966" target="_blank" rel="noreferrer">arXiv: 2604.16966</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="publication-stack">
-          <article class="surface publication-block">
-            <div class="paper-header">
-              <span class="status preprint">合作预印本</span>
-            </div>
-            <h3>How Order-Sensitive Are LLMs? OrderProbe for Deterministic Structural Reconstruction.</h3>
-            <p class="paper-meta">He, Yingjie, Zhaolu Kang, Kehan Jiang, <strong>Qian, Jiachen</strong>, et al.</p>
-            <p class="paper-venue">arXiv preprint, 2026</p>
-            <p class="paper-summary">共同作者；LLM 顺序敏感性与确定性结构重建。</p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/abs/2601.08626" target="_blank" rel="noreferrer">arXiv: 2601.08626</a>
-            </div>
-          </article>
-
-          <article class="surface publication-block">
-            <div class="paper-header">
-              <span class="status review">在审 / Under Review</span>
-            </div>
-            <h3>Manuscript on attacks against large models for tampered social-media image detection.</h3>
-            <p class="paper-venue">Submitted to ECCV, 2026</p>
-            <p class="paper-summary">合作研究；社交媒体篡改图像识别大模型攻击。</p>
-          </article>
-        </div>
-      </section>
-
       <section class="section dual-section" id="service">
         <article class="surface">
           <div class="section-header compact">
@@ -369,11 +400,11 @@
           </article>
           <article class="surface skill-card">
             <h3>AI 与科研工具</h3>
-            <p>PyTorch、CUDA、Scikit-learn、LLM / VLM 开发、多模态智能体评测、篡改图像识别模型攻击分析</p>
+            <p>PyTorch、CUDA、Transformers、OpenCV、Scikit-learn、多模态模型评测、篡改图像识别模型攻击分析</p>
           </article>
           <article class="surface skill-card">
             <h3>科研工程能力</h3>
-            <p>Codex、AI 辅助编程工作流、实验自动化、对抗攻击与防御评测、可复现实验分析</p>
+            <p>对抗攻击流水线、鲁棒性评测、实验自动化、可复现实验分析、LLM / VLM evaluation workflows</p>
           </article>
           <article class="surface skill-card">
             <h3>研究主题</h3>
